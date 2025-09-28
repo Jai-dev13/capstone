@@ -1,11 +1,15 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './HomePage';
+import BookingPage from './BookingPage';
 
 function Main() {
   return (
-    <main>
-      <h1>Reserve a Table</h1>
-      <p>Welcome to Little Lemon! Book your table now.</p>
-      {/* You can later add the form here */}
+    <main className="main-content">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/booking" element={<BookingPage />} />
+      </Routes>
     </main>
   );
 }
