@@ -1,10 +1,13 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 function Chicago() {
   return (
     <section className="chicago-section">
       <div className="chicago-content">
-        <h2>Little Lemon Chicago</h2>
+        <div className="chicago-header">
+          <h2>Little Lemon Chicago</h2>
+        </div>
         <p>
           Little Lemon opened in 1995 by two Italian brothers, bringing their grandmother's recipes
           from the Mediterranean to Chicago. The restaurant has been serving
@@ -17,8 +20,11 @@ function Chicago() {
         </p>
       </div>
       <div className="chicago-image">
-        {/* Placeholder for restaurant image */}
-        <div className="image-placeholder" aria-label="Restaurant interior"></div>
+        <img 
+          src={logo} 
+          alt="Little Lemon Logo" 
+          className="chicago-feature-image"
+        />
       </div>
     </section>
   );

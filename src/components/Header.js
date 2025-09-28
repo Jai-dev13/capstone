@@ -1,9 +1,16 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 function Header() {
   return (
-    <header>
-      <img src="/logo.png" alt="Little Lemon Logo" />
+    <header className="header">
+      <div className="header-content">
+        <img 
+          src={logo} 
+          alt="Little Lemon Logo" 
+          className="header-logo-small"
+        />
+      </div>
     </header>
   );
 }
